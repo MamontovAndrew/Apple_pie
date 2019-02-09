@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,41 +14,444 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Apple_pie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-2G-Tep">
-                                <rect key="frame" x="16" y="36" width="992" height="1314"/>
+                                <rect key="frame" x="16" y="36" width="288" height="516"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="PXi-tZ-rki">
-                                        <rect key="frame" x="0.0" y="0.0" width="992" height="657"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="258"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-qp-G8q">
-                                        <rect key="frame" x="0.0" y="657" width="992" height="657"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u9B-qp-G8q">
+                                        <rect key="frame" x="0.0" y="258" width="288" height="258"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q3W-SI-VSS">
-                                                <rect key="frame" x="0.0" y="0.0" width="992" height="616"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3W-SI-VSS">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="178"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-wc-bhh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="992" height="616"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-wc-bhh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="35.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIZ-c1-Yvp">
-                                                                <rect key="frame" x="0.0" y="0.0" width="992" height="616"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                <state key="normal" title="А"/>
+                                                                <connections>
+                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9l-uY-dPZ"/>
+                                                                </connections>
                                                             </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5e3-5X-FOA">
+                                                                <rect key="frame" x="41" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9s-6R-dEJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Б"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Msc-bo-hUl"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-Aa-tLI">
+                                                                <rect key="frame" x="82.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0g-3H-HIO">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="В"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qpe-la-kh5"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-Tg-5tx">
+                                                                <rect key="frame" x="123.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY7-O4-Y7V">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Г"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IvZ-rP-5Lp"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-41-o1Z">
+                                                                <rect key="frame" x="164.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyR-vr-X7e">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Д"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fr7-xW-nWJ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8n-xG-fwo">
+                                                                <rect key="frame" x="205.5" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5H-yJ-Qhq">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Е"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MnH-lt-wMu"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukF-yu-fHT">
+                                                                <rect key="frame" x="247" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYr-GZ-3Mc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ё"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7s4-8X-Hkb"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-Qk-A0x">
+                                                        <rect key="frame" x="0.0" y="35.5" width="288" height="35.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-X0-ylD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                <state key="normal" title="Ж"/>
+                                                                <connections>
+                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRG-ZK-2SG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-mS-hcS">
+                                                                <rect key="frame" x="41" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU6-BY-jUE">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="З"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HW0-4B-eeJ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzw-mr-fck">
+                                                                <rect key="frame" x="82.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6df-o8-M4K">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="И"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiB-na-mBH"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-yd-brn">
+                                                                <rect key="frame" x="123.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eI-PV-0bu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Й"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsm-UB-kCe"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-Wb-Q8w">
+                                                                <rect key="frame" x="164.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex1-rx-hjF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="К"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIV-Zi-69G"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cws-wd-rib">
+                                                                <rect key="frame" x="205.5" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKG-I4-cjc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Л"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="htA-ib-rx2"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu6-oh-h7x">
+                                                                <rect key="frame" x="247" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYJ-BQ-l5t">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="М"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q5t-Ju-2Sb"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cOE-LB-gwW">
+                                                        <rect key="frame" x="0.0" y="71" width="288" height="36"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96D-8L-Yrs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                                <state key="normal" title="Н"/>
+                                                                <connections>
+                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4q-23-YDF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8V-lM-Bd4">
+                                                                <rect key="frame" x="41" y="0.0" width="41.5" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo3-7P-gJS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="36"/>
+                                                                        <state key="normal" title="О"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6T-iE-ZmK"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC5-bo-EaW">
+                                                                <rect key="frame" x="82.5" y="0.0" width="41" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reA-Qk-8Xf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                                        <state key="normal" title="П"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhU-cX-7RR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-y5-G2H">
+                                                                <rect key="frame" x="123.5" y="0.0" width="41" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uda-MD-oWg">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                                        <state key="normal" title="Р"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ci-7B-yrl"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viU-Xd-Jkd">
+                                                                <rect key="frame" x="164.5" y="0.0" width="41" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-EZ-hLt">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                                        <state key="normal" title="С"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0M-Ap-Wl8"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-fU-c7S">
+                                                                <rect key="frame" x="205.5" y="0.0" width="41.5" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noi-SW-k3g">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="36"/>
+                                                                        <state key="normal" title="Т"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9P-aF-iHm"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhz-sH-xqM">
+                                                                <rect key="frame" x="247" y="0.0" width="41" height="36"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-XL-zYB">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                                                        <state key="normal" title="У"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzA-1q-LQU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nrP-dp-kOp">
+                                                        <rect key="frame" x="0.0" y="107" width="288" height="35.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-CZ-3oh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                <state key="normal" title="Ф"/>
+                                                                <connections>
+                                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gU8-DT-jbN"/>
+                                                                </connections>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwM-TS-F8x">
+                                                                <rect key="frame" x="41" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsE-57-Iyl">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Х"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rif-3Z-qe3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0e-of-eQX">
+                                                                <rect key="frame" x="82.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huy-7a-BDJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ц"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m86-rE-iQA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-cG-Vjw">
+                                                                <rect key="frame" x="123.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eb-Zb-DQK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ч"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFR-rT-nlW"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fG-5T-rhu">
+                                                                <rect key="frame" x="164.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkU-cP-ZZ1">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ш"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7DL-ce-rXI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBl-hi-7Sn">
+                                                                <rect key="frame" x="205.5" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRz-M2-IK7">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Щ"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfJ-gO-ofg"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2q-KO-sWs">
+                                                                <rect key="frame" x="247" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhS-at-m5f">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ъ"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2U-2f-rMG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tMP-vf-4tg">
+                                                        <rect key="frame" x="0.0" y="142.5" width="288" height="35.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-U0-zSC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjH-L1-Pn0">
+                                                                <rect key="frame" x="41" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzV-rO-Wkw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Ы"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuJ-4Z-iJP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-MP-ndg">
+                                                                <rect key="frame" x="82.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdI-UP-Sfw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ь"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYe-4q-nUs"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftq-q4-NkS">
+                                                                <rect key="frame" x="123.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syt-le-iH2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Э"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eh2-F1-gN8"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixu-m7-16f">
+                                                                <rect key="frame" x="164.5" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9m0-Dc-Tkz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                        <state key="normal" title="Ю"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0y-6i-x1F"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUd-tQ-EnJ">
+                                                                <rect key="frame" x="205.5" y="0.0" width="41.5" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-Ar-n6A">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="35.5"/>
+                                                                        <state key="normal" title="Я"/>
+                                                                        <connections>
+                                                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gI1-87-39I"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vK9-gE-D7M">
+                                                                <rect key="frame" x="247" y="0.0" width="41" height="35.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-a2-1xi">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="35.5"/>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-Nu-DVv">
-                                                <rect key="frame" x="0.0" y="616" width="992" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _ _ _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-Nu-DVv">
+                                                <rect key="frame" x="0.0" y="188" width="288" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-N9-pLq">
-                                                <rect key="frame" x="0.0" y="636.5" width="992" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Выигрыши: 0, проигрыши: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-N9-pLq">
+                                                <rect key="frame" x="0.0" y="234" width="288" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -68,7 +471,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="correctWordLabel" destination="rQ2-Nu-DVv" id="B9D-ad-3kS"/>
+                        <outlet property="scoreLabel" destination="jbk-N9-pLq" id="sMP-6c-Bq4"/>
                         <outlet property="topStackView" destination="qC0-2G-Tep" id="ycq-9x-1k6"/>
+                        <outlet property="treeImageView" destination="PXi-tZ-rki" id="g5X-RD-UQt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
